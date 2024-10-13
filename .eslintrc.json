@@ -1,6 +1,7 @@
 {
   "extends": "@rocketseat/eslint-config/next",
   "rules": {
-    "no-duplicate-imports":"off"
+    "no-duplicate-imports":"off",
+    "@typescript-eslint/no-explicit-any":"off"
   }
 }
