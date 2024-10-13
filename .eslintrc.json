@@ -3,6 +3,5 @@
   "rules": {
     "no-duplicate-imports":"off",
     "@typescript-eslint/no-explicit-any":"off",
-    "noImplicitAny": false
   }
 }
