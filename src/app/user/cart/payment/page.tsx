@@ -4,9 +4,10 @@ import { SiNubank } from 'react-icons/si'
 import { CiCreditCard1 } from 'react-icons/ci'
 import { roboto } from '@/ui/fonts'
 export default function payment() {
-  const handleRadioClick = (id) => {
-    if (document.getElementById(id)) {
-      document.getElementById(id).checked = true
+  const handleRadioClick = (id:string) => {
+    const element = document.getElementById(id);
+    if (element instanceof  HTMLInputElement ) {
+      element.checked = true
     }
   }
   return (
