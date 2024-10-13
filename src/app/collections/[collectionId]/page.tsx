@@ -4,13 +4,14 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
 import Image from 'next/image'
 import wideCard from '@images/card-wide-example.png'
 
-interface PageProps {
-  params: {
-    co: string
-  }
-}
+// interface PageProps {
+//   params: {
+//     co: string
+//   }
+// }
 
-export default function Page({ params }: PageProps) {
+export default function Page() {
+  // { params }: PageProps
   return (
     <>
       <section className="flex w-full mt-[76px] gap-2 mx-2 relative justify-between">

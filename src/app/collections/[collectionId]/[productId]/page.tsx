@@ -3,8 +3,7 @@ import Image from 'next/image'
 import Sukajan from '@images/Sukajan.png'
 import { blanka, roboto } from '@/ui/fonts'
 import ProductCard from '@/app/components/ItemCards/ProductCard'
-import { FaStar } from "react-icons/fa"
-export default function product({ params }: any) {
+export default function product() {
   return (
     <>
       <section
@@ -23,13 +22,15 @@ export default function product({ params }: any) {
       "
       >
         <div className=" w-fit mb-2 mx-auto flex gap-10 relative">
-          <div className="grid max-w-[5 0vw] 
-              grid-cols-2 grid-rows-3 w-[850px]  items-center mb-2 z-20  gap-2">
+          <div
+            className="grid max-w-[5 0vw] 
+              grid-cols-2 grid-rows-3 w-[850px]  items-center mb-2 z-20  gap-2"
+          >
             <div className="relative max-w-[23vw]  w-[420px] aspect-[2/3]">
               <Image
                 alt="Product image"
                 fill
-                style={{objectFit:"cover"}}
+                style={{ objectFit: 'cover' }}
                 className="rounded-md  hover:[border:1px_solid_white] [border:1px_solid_transparent]   hover:z-50 transition-all"
                 src={Sukajan.src}
               />
@@ -38,7 +39,7 @@ export default function product({ params }: any) {
               <Image
                 alt="Product image"
                 fill
-                style={{objectFit:"cover"}}
+                style={{ objectFit: 'cover' }}
                 className="rounded-md  hover:[border:1px_solid_white] [border:1px_solid_transparent]   hover:z-50 transition-all"
                 src={Sukajan.src}
               />
@@ -47,7 +48,7 @@ export default function product({ params }: any) {
               <Image
                 alt="Product image"
                 fill
-                style={{objectFit:"cover"}}
+                style={{ objectFit: 'cover' }}
                 className="rounded-md  hover:[border:1px_solid_white] [border:1px_solid_transparent]   hover:z-50 transition-all"
                 src={Sukajan.src}
               />
@@ -56,7 +57,7 @@ export default function product({ params }: any) {
               <Image
                 alt="Product image"
                 fill
-                style={{objectFit:"cover"}}
+                style={{ objectFit: 'cover' }}
                 className="rounded-md  hover:[border:1px_solid_white] [border:1px_solid_transparent]   hover:z-50 transition-all"
                 src={Sukajan.src}
               />
@@ -65,7 +66,7 @@ export default function product({ params }: any) {
               <Image
                 alt="Product image"
                 fill
-                style={{objectFit:"cover"}}
+                style={{ objectFit: 'cover' }}
                 className="rounded-md  hover:[border:1px_solid_white] [border:1px_solid_transparent]   hover:z-50 transition-all"
                 src={Sukajan.src}
               />
@@ -74,7 +75,7 @@ export default function product({ params }: any) {
               <Image
                 alt="Product image"
                 fill
-                style={{objectFit:"cover"}}
+                style={{ objectFit: 'cover' }}
                 className="rounded-md  hover:[border:1px_solid_white] [border:1px_solid_transparent]   hover:z-50 transition-all"
                 src={Sukajan.src}
               />
@@ -105,20 +106,7 @@ export default function product({ params }: any) {
             </p>
             <div className="division my-4  h-[1px] w-full bg-white opacity-70" />
             <h4>Size</h4>
-            <ul className=
-            "
-            [&>*]:py-2
-            [&>*]:px-3
-            [&>*]:rounded-md
-            [&>*]:mr-2
-            [&>*]:cursor-pointer
-            [&>*]:[border:1px_solid_#303030]
-            [&>*:hover]:bg-white
-            [&>*:hover]:text-black
-            transition-all
-            duration-300
-            flex
-            ">
+            <ul className="[&>*]:py-2 [&>*]:px-3 [&>*]:rounded-md [&>*]:mr-2 [&>*]:cursor-pointer [&>*]:[border:1px_solid_#303030] [&>*:hover]:bg-white [&>*:hover]:text-black transition-all duration-300 flex">
               <li>S</li>
               <li>L</li>
               <li>XL</li>
@@ -126,7 +114,8 @@ export default function product({ params }: any) {
             </ul>
             <div className="division my-4 h-[1px] w-full bg-white opacity-70" />
             <h4>Model</h4>
-            <ul className="
+            <ul
+              className="
             flex
             [&>*]:py-2
             [&>*]:px-3
@@ -136,7 +125,8 @@ export default function product({ params }: any) {
             [&>*]:[border:1px_solid_#303030]
             [&>*:hover]:bg-white
             [&>*:hover]:text-black
-            ">
+            "
+            >
               <li>Black and white</li>
               <li>Red Kanji</li>
               <li>Shiro Dragon</li>
