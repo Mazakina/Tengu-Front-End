@@ -2,12 +2,12 @@ import Image from 'next/image'
 import example from '@images/outfit-exp.png'
 import { roboto } from '@/ui/fonts'
 
-interface EventProps {
-  url: string
-  images: string[]
-  title: string
-  price: number
-}
+// interface EventProps {
+//   url: string
+//   images: string[]
+//   title: string
+//   price: number
+// }
 
 export default function ProductCard() {
   return (

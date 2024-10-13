@@ -6,15 +6,16 @@ import { roboto } from '@/ui/fonts'
 import { IoMdAdd } from 'react-icons/io'
 import Link from 'next/link'
 
-interface CollectionsCardProps {
-  images: string[]
-  type: 'wide' | 'base'
-  title: string
-  price: number
-}
+// interface CollectionsCardProps {
+//   images: string[]
+//   type: 'wide' | 'base'
+//   title: string
+//   price: number
+// }
 
 export default function CollectionsCard({ type = 'base' }) {
-  function quickBuyHandler(event) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function quickBuyHandler(event: any) {
     event.preventDefault()
   }
 
