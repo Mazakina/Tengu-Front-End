@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tengu-Drip Frontend
 
-## Getting Started
+![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-First, run the development server:
+<img src="frontend-image.png" alt="Tengu-Drip Frontend" style="width: 100%; height: auto;">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Tengu-Drip** é um e-commerce desenvolvido utilizando **Next.js** no frontend, com suporte a animações complexas fornecidas pelo **Framer Motion**, estilização eficiente via **Tailwind CSS**, e tipagem segura e robusta através do **TypeScript**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Framework React para renderização do lado do servidor (SSR) e geração estática.
+- **Tailwind CSS**: Framework CSS utilitário que permite criar layouts rápidos e responsivos.
+- **TypeScript**: Superset de JavaScript que adiciona tipagem estática, facilitando a manutenção e escalabilidade do código.
+- **Framer Motion**: Biblioteca de animações que facilita a criação de transições e interações fluidas.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Funcionalidades
 
-## Learn More
+- **Catálogo de Produtos**: Exibição responsiva e otimizada de produtos com filtros e busca.
+- **Carrinho de Compras**: Interações dinâmicas e fluídas no gerenciamento de itens no carrinho.
+- **Checkout**: Processo de finalização de compra simples e otimizado.
+- **Animações**: Transições e interações visuais atraentes usando **Framer Motion**.
+- **Dark Mode**: Suporte para tema claro e escuro, com transições suaves entre modos.
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A estrutura do projeto foi planejada para garantir a manutenibilidade e escalabilidade do código. Algumas das principais pastas e arquivos são:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `components/`: Componentes reutilizáveis do UI.
+- `pages/`: Cada página da aplicação seguindo a estrutura de rotas do Next.js.
+- `styles/`: Arquivos de estilos customizados além de configurações do Tailwind CSS.
+- `animations/`: Animações complexas implementadas com Framer Motion.
 
-## Deploy on Vercel
+### Exemplos de Animações
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```tsx
+import { motion } from "framer-motion";
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+const MyComponent = () => (
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+  >
+    Bem-vindo ao Tengu-Drip!
+  </motion.div>
+);
+
+
+
+## Ajustes e Melhorias
+
+O projeto está em constante desenvolvimento, com novas funcionalidades e melhorias sendo adicionadas regularmente. Aqui estão algumas das próximas etapas:
+
+- [x]  Estrutura básica da aplicação
+- [x]  Implementação das animaçoes e interatividade  
+- [ ]  Integração com backend via API
+- [ ]  Melhorias de performance e SEO
+- [ ]  Cobertura de Testes Unitários e E2E
+
+## 🚀 Como Contribuir
+
+Se você quiser contribuir com o desenvolvimento do **Tengu-Drip**, siga os passos abaixo:
+
+1. **Fork o repositório**
+2. **Crie uma branch** para a sua feature (`git checkout -b feature/MinhaFeature`)
+3. **Commit as suas mudanças** (`git commit -m 'Adiciona minha nova feature'`)
+4. **Envie para a branch** (`git push origin feature/MinhaFeature`)
+5. **Abra um Pull Request**
+
+
+## 📝 Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
