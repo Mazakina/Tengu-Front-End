@@ -11,7 +11,8 @@ import { roboto } from '@/ui/fonts'
 //   price: number
 // }
 
-export default function CarroselCard({ view }) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function CarroselCard({ view }: any) {
   const isEven = view.charCodeAt(0) % 2 === 0
   const url = isEven ? suka.src : example.src
   return (
