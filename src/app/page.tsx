@@ -4,8 +4,10 @@ import HeroPic from '@images/Hero.png'
 import Image from 'next/image'
 import EventCard from './components/ItemCards/EventCard'
 import SukajanPic from '@images/Sukajan.png'
+import WidePic from '@images/redshirt.png'
 import Crossing from '@images/Crossing.svg'
 import concave from '@images/concave.svg'
+import Grafite from '@images/graft.png'
 import ScrollViewer from './components/scrollViewer'
 import BorderedContainer from './components/BorderedContainer'
 import LedBorderCard from './components/ledBorderCard'
@@ -26,7 +28,7 @@ export default function Home() {
         id="hero"
         className={`flex flex-col w-[100%] top-0 left-0  absolute  `}
       >
-        <div className="relative flex flex-col h-[67vh]  w-[100svw] mt-[40vh]">
+        <div className="relative flex flex-col h-[67vh]  w-[100svw] mt-[80vh]">
           <div
             className="
             grid
@@ -94,26 +96,38 @@ export default function Home() {
       </section>
       <div
         className="
-        mt-[106.5vh] h-[88px] 
+        mt-[146.5vh] h-[88px] 
         w-full
-        bg-[#B4B4B480] 
-        backdrop-blur-md
-      "
+        bg-[#d3878780] 
+        backdrop-blur-md"
       />
       <section
         id="event"
         className="flex flex-col relative  bg-c-gray-bg w-full"
       >
+        <div className="absolute -top-8 left-8 brightness-90 ">
+          <Image src={Grafite.src} width={970} height={1800}  alt={'Logo da marca em estilo Grafite'}></Image>
+        </div>
+        <div className="relative my-16">
         <ScrollViewer />
 
+        </div>
+      
+      <div
+      className='relative'>
+        <div 
+        className="absolute h-[740px] mt-[170px] brightness-75 overflow-hidden">
+          <Image height={420} width={1920} src={WidePic.src} alt={'asd'}          
+          />
+        </div>
         <div
           id="info-container"
-          className=" my-[200px] gap-4 pb-20 px-10 grid grid-cols-2 grid-rows-3 w-full h-[1000px] "
+          className=" relative my-[200px] gap-4 pb-20 px-10 grid grid-cols-2 grid-rows-2 w-full h-[800px] "
         >
           <div className=" row-span-3 flex items-center justify-center">
-            <BorderedContainer src={SukajanPic.src} height={720} margin={16} />
+            {/* <BorderedContainer src={SukajanPic.src} height={720} margin={16} /> */}
           </div>
-          <div className=" flex items-center row-span-1">
+          <div className=" flex items-center  row-span-1">
             <BorderedContainer src={SukajanPic.src} height={240} margin={12} />
             <div className="flex ml-6  flex-col">
               <h3 className={`text-3xl mb-6 ${blanka}`}>THE SUJAKAN JACKET</h3>
@@ -132,15 +146,16 @@ export default function Home() {
             <BorderedContainer src={SukajanPic.src} height={240} margin={12} />
           </div>
           <div className=" flex items-center row-span-1">
-            <BorderedContainer src={SukajanPic.src} height={240} margin={12} />
+            {/* <BorderedContainer src={SukajanPic.src} height={240} margin={12} />
             <div className="flex ml-6  flex-col">
               <h3 className={`text-3xl mb-6 ${blanka}`}>THE SUJAKAN JACKET</h3>
               <p className={`text-2xl w-[70%] ${roboto}`}>
                 Japanese craftsmanship and modern style for a standout
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
+      </div>
       </section>
       <Image
         alt=" "
@@ -149,7 +164,7 @@ export default function Home() {
         height={140}
         width={1920}
       />
-      <section className="pt-20  flex flex-col relative bg-c-gray-bg">
+      <section className="pt-20 px-4 flex flex-col relative bg-c-gray-bg">
         <div className="h-fit mb-4 mx-auto">
           <button></button>
           <p className={`${roboto} text-xl `}> Most Popular</p>
@@ -160,10 +175,8 @@ export default function Home() {
           <EventCard />
           <EventCard />
           <EventCard />
-          <EventCard />
         </div>
         <div className="w-full justify-around flex">
-          <EventCard />
           <EventCard />
           <EventCard />
           <EventCard />

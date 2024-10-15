@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
 import CarroselCard from '../ItemCards/CarroselCard'
-import { roboto } from '@/ui/fonts'
+import { blanka, roboto } from '@/ui/fonts'
 import DirectLeftSvg from '@/svgs/DirectLeft'
 
 export default function ScrollViewer() {
@@ -64,47 +64,22 @@ export default function ScrollViewer() {
 
   return (
     <>
-      <div className="mt-[120px]  flex items-center h-fit mx-auto ">
-        <button
-          className="relative group"
-          onClick={() => {
-            if (additional > 0) {
-              moveBouncer(-1)
-            } else {
-              moveBouncer(900)
-            }
-          }}
-        >
-          <DirectLeftSvg
-            fill=""
-            className="mr-3 transition-all duration-500 opacity-0 group-hover:opacity-100 absolute fill-white group-hover:fill-c-pastel-green blur-md "
-          />{' '}
-          <DirectLeftSvg
-            fill=""
-            className="mr-3 transition-all duration-500 fill-white group-hover:fill-c-pastel-green  "
-          />
-        </button>
-        <p className={`${roboto} `}>CHECK OUT OUR NEWEST RELEASES</p>
-        <button
-          className="relative group"
-          onClick={() => {
-            moveBouncer(1)
-          }}
-        >
-          <DirectLeftSvg
-            fill=""
-            className="ml-3 transition-all duration-500 opacity-0 group-hover:opacity-100 absolute -scale-100 fill-white group-hover:fill-c-pastel-green blur-md "
-          />{' '}
-          <DirectLeftSvg
-            fill=""
-            className="ml-3 transition-all duration-500 fill-white -scale-100 group-hover:fill-c-pastel-green  "
-          />
-        </button>
+      <div className="mt-[120px]  flex items-center w-fit h-fit pl-20 ml-auto mr-[10%] ">
+
+        <p className={
+          `${blanka}  
+          leading-normal 
+          text-[96px] 
+            font-bold 
+          text-transparent  
+          outline-4 
+          text-stroke
+          `}>CHECK OUT OUR<br/> &nbsp;&nbsp;&nbsp;&nbsp; NEWEST RELEASES</p>
       </div>
       <motion.div
         className="
-        w-[1400px] 
-        h-[500px] 
+        w-[94vw] 
+        h-[400px] 
         mt-[100px] 
         relative  
         overscroll-contain

@@ -12,7 +12,7 @@ import { roboto } from '@/ui/fonts'
 export default function EventCard() {
   return (
     <div className=" flex flex-col  items-center w-[280px] h-[510px]">
-      <div className="w-[280px] overflow-hidden relative h-[400px]">
+      <div className="w-[280px] rounded-xl overflow-hidden relative h-[400px]">
         <Image
           alt="product display card"
           fill

@@ -16,8 +16,8 @@ export default function CarroselCard({ view }: any) {
   const isEven = view.charCodeAt(0) % 2 === 0
   const url = isEven ? suka.src : example.src
   return (
-    <div className=" flex flex-col  items-center w-[240px] h-[460px]">
-      <div className="w-[240px] rounded-xl overflow-hidden relative h-[350px]">
+    <div className=" flex flex-col  items-center w-[280px] h-[440px]">
+      <div className="w-[280px] rounded-2xl overflow-hidden relative h-[380px]">
         <Image
           alt="product display card"
           fill

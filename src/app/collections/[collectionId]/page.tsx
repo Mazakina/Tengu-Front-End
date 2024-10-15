@@ -13,7 +13,7 @@ import wideCard from '@images/card-wide-example.png'
 export default function Page() {
   // { params }: PageProps
   return (
-    <>
+    <div className={'bg-c-gray-bg relative'}>
       <section className="flex w-full mt-[76px] gap-2 mx-2 relative justify-between">
         <div className="w-[624px] group overflow-hidden  relative flex   h-[274px] rounded-md bg-white ">
           <Image
@@ -115,12 +115,8 @@ export default function Page() {
           <CollectionsCard />
         </div>
 
-        <ul className=" w-fit mx-auto flex gap-2">
-          <li className=" flex items-center justify-center w-8 h-8">
-            <a href="">
-              <MdKeyboardArrowLeft className="text-2xl" />
-            </a>
-          </li>
+        <ul className=" w-fit ml-auto mr-24 my-8 flex gap-2">
+
           <li className=" flex items-center justify-center w-8 h-8">
             <a href="">1</a>
           </li>
@@ -137,13 +133,8 @@ export default function Page() {
             <a href="">20</a>
           </li>
 
-          <li className=" flex items-center justify-center w-8 h-8">
-            <a href="">
-              <MdKeyboardArrowRight className="text-2xl" />
-            </a>
-          </li>
         </ul>
       </section>
-    </>
+    </div>
   )
 }

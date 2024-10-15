@@ -22,7 +22,7 @@ export default function Header() {
       >
         <div
           className=" 
-        bg-[#2c2b2bc7] 
+        bg-[#2c2b2b57] 
         w-screen
         h-14
         items-center 
@@ -53,22 +53,34 @@ export default function Header() {
             >
               Categories
             </div>
-            <div className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
+            <div
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
               Sale
             </div>
-            <div className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
+            <div 
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
               New in
             </div>
-            <div className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
+            <div 
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
               Shoes
             </div>
-            <div className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
+            <div 
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
               Man Fashion
             </div>
-            <div className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
+            <div 
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
               Woman Clothing
             </div>
-            <div className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
+            <div 
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="cursor-pointer relative  after:[content:''] after:absolute after:-bottom-2  after:h-[2px] after:left-0 hover:after:w-full after:w-0 after:transition-all after:duration-300 after:bg-white ">
               Accessories
             </div>
           </div>
@@ -108,9 +120,8 @@ export default function Header() {
             absolute
             transition-all
             duration-300
-            [border-top:2px_solid_gray]
             w-full
-            bg-[#2c2b2bc7]
+        bg-[#2c2b2b57] 
             backdrop-blur-sm
             text-sm  
             flex
