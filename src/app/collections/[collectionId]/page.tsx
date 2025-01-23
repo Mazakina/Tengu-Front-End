@@ -2,6 +2,7 @@ import CollectionsCard from '../../components/ItemCards/CollectionsCard'
 import { BsFilterLeft } from 'react-icons/bs'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
 import Image from 'next/image'
+import GraftBg from '@images/greenGraft.svg'
 import wideCard from '@images/card-wide-example.png'
 
 // interface PageProps {
@@ -14,6 +15,12 @@ export default function Page() {
   // { params }: PageProps
   return (
     <div className={'bg-c-gray-bg relative'}>
+      <Image
+      width={1920}
+      height={2000}
+      className='fixed -mt-10'
+      
+      src={GraftBg.src} alt={''}/>
       <section className="flex w-full mt-[76px] gap-2 mx-2 relative justify-between">
         <div className="w-[624px] group overflow-hidden  relative flex   h-[274px] rounded-md bg-white ">
           <Image
@@ -89,7 +96,7 @@ export default function Page() {
         </div>
       </section>
       <section className="relative mt-24  ">
-        <button className="flex ml-28 my-10 border border-transparent hover:bg-black hover:border-white items-center bg-c-gray-button rounded-md p-2">
+        <button className="flex ml-28 my-10 border border-white hover:text-black hover:bg-white hover:border-black items-center bg-c-gray-button rounded-md p-2">
           {' '}
           <BsFilterLeft className=" mr-2 text-2xl " />
           Filter

@@ -23,7 +23,7 @@ export default function CollectionsCard({ type = 'base' }) {
   if (isWide) {
     return (
       <div
-        className={` h-[500px] mb-[70px] max-w-[820px] max-h-[570px] overflow-hidden col-span-2 row-span-1 flex  justify-center items-center`}
+        className={` h-[500px] mb-[70px] max-w-[820px] max-h-[570px] rounded-md overflow-hidden col-span-2 row-span-1 flex  justify-center items-center`}
         style={{ backgroundImage: `url("${example.src}")` }}
       >
         <button
@@ -55,7 +55,7 @@ export default function CollectionsCard({ type = 'base' }) {
     return (
       <Link
         href={'./a/s'}
-        className={` h-[570px] max-w-[820px] max-h-[570px] overflow-hidden col-span-1 row-span-1 flex flex-col justify-between items-center`}
+        className={`rounded-md h-[570px] max-w-[820px] max-h-[570px] overflow-hidden col-span-1 row-span-1 flex flex-col justify-between items-center`}
       >
         <div className={`group flex  w-[400px] h-[500px] relative`}>
           <Image
